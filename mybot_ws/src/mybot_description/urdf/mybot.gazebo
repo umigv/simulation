@@ -84,9 +84,9 @@
 
   <!-- hokuyo -->
   <gazebo reference="hokuyo">
-    <sensor type="gpu_ray" name="head_hokuyo_sensor">
+    <sensor type="ray" name="head_hokuyo_sensor">
       <pose>0 0 0 0 0 0</pose>
-      <visualize>true</visualize>
+      <visualize>false</visualize>
       <update_rate>15</update_rate>
       <ray>
         <scan>
@@ -98,7 +98,7 @@
           </horizontal>
         </scan>
         <range>
-          <min>0.10</min>
+          <min>0.35</min>
           <max>25</max>
           <resolution>0.01</resolution>
         </range>
@@ -112,7 +112,7 @@
           <stddev>0.01</stddev>
         </noise>
       </ray>
-      <plugin name="gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_gpu_laser.so">
+      <plugin name="gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_laser.so">
         <topicName>/mybot/laser/scan</topicName>
         <frameName>hokuyo</frameName>
       </plugin>
