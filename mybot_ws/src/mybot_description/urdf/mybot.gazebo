@@ -91,16 +91,16 @@
       <ray>
         <scan>
           <horizontal>
-            <samples>720</samples>
+            <samples>400</samples>
             <resolution>1</resolution>
             <min_angle>-3.14</min_angle>
             <max_angle>3.14</max_angle>
           </horizontal>
         </scan>
         <range>
-          <min>0.35</min>
-          <max>25</max>
-          <resolution>0.01</resolution>
+          <min>0.15</min>
+          <max>8</max>
+          <resolution>0.1</resolution>
         </range>
         <noise>
           <type>gaussian</type>
@@ -109,7 +109,7 @@
                stddev of 0.01m will put 99.7% of samples within 0.03m of the true
                reading. -->
           <mean>0.0</mean>
-          <stddev>0.01</stddev>
+          <stddev>0.0005</stddev>
         </noise>
       </ray>
       <plugin name="gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_laser.so">
