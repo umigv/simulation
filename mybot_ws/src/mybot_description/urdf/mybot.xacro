@@ -91,7 +91,7 @@
   <link name="left_wheel">
     <!--origin xyz="0.1 0.13 0.1" rpy="0 1.5707 1.5707"/-->
     <collision name="collision">
-      <origin xyz="0 0 0" rpy="0 1.5707 1.5707"/>
+      <origin xyz="0.1 0.13 0.1" rpy="0 1.5707 1.5707"/>
       <geometry>
         <cylinder radius="0.1" length="0.05"/>
       </geometry>
@@ -115,7 +115,7 @@
   <link name="right_wheel">
     <!--origin xyz="0.1 -0.13 0.1" rpy="0 1.5707 1.5707"/-->
     <collision name="collision">
-      <origin xyz="0 0 0" rpy="0 1.5707 1.5707"/>
+      <origin xyz="0.1 -0.13 0.1" rpy="0 1.5707 1.5707"/>
       <geometry>
         <cylinder radius="0.1" length="0.05"/>
       </geometry>
@@ -222,4 +222,3 @@
 
 
 </robot>
-
